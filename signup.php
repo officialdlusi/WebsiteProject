@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once 'navbar/header.php';
 ?>
 
 <!DOCTYPE html>
@@ -69,5 +69,5 @@ include_once 'header.php';
 </html>
 
 <?php
-include_once 'footer.php';
+include_once 'navbar/footer.php';
 ?>

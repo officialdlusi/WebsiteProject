@@ -1,7 +1,3 @@
-<?php
-include_once 'navbar/header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +27,3 @@ include_once 'navbar/header.php';
     
 </body>
 </html>
-
-<?php
-include_once 'navbar/footer.php';
-?>

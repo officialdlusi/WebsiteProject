@@ -1,12 +1,12 @@
 <!-- <?php
-include_once 'header.php';
+include_once 'navbar/header.php';
 ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
     <body>
         <p>SEND-EMAIL</p>
-        <form class="contact-form" action="contactform.php" method="post">
+        <form class="contact-form" action="includes/contactform.php" method="post">
             <input type="text" name="name" placeholder="Full name">
             <input type="text" name="mail" placeholder="Your email">
             <input type="text" name="subject" placeholder="Subject">
@@ -15,3 +15,7 @@ include_once 'header.php';
         </form>
     </body>
 </html>
+
+<?php
+include_once 'navbar/footer.php';
+?>

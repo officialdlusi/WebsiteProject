@@ -23,7 +23,7 @@ session_start();
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="pages/index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <?php
                 if (isset($_SESSION["useruid"])) {
                     echo "<li><a href='dashboard.php'>Dashboard</a></li>";
@@ -35,7 +35,6 @@ session_start();
                     echo "<li><a href='login.php'>Login</a></li>";
                 }
                 ?>
-                <li><a href="aboutus.php">About Us</a></li>
             </ul>
         </div>
     </nav>
