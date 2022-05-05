@@ -31,15 +31,15 @@ if ($user)
                 $hashednewpassword = password_hash($newpassword, PASSWORD_DEFAULT);
                 $querychange = "UPDATE users SET usersPwd = '$hashednewpassword' WHERE usersuid = '$user'";
                 $result = mysqli_query($conn, $querychange);
-                header("location: index.php?error=passwordchanged");
+                header("location: ../index.php?error=passwordchanged");
                 session_destroy();
             } else {
-                header("location: changepassword.php?error=newnomatch");
-                echo "new passwords don't match";
+                header("location: ../settings.php?error=newnomatch");
+                exit();
             }
         } else {
-            header("location: changepassword.php?error=oldnomatch");
-            echo "old passwords don't match";
+            header("location: ../settings.php?error=oldnomatch");
+            exit();
         }
 
 

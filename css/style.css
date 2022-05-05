@@ -43,7 +43,7 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     padding: 1rem;
     display: block;
@@ -121,7 +121,7 @@ img {
     position: absolute;
     top: 0;
     padding: 15px 30px;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Slideshow container */
@@ -134,6 +134,7 @@ img {
 
 .slideshow-container .mySlides .info h2 {
     text-transform: uppercase;
+
 }
 
 .slideshow-container .mySlides .info p {
@@ -183,7 +184,7 @@ img {
 .mySlides .text {
     color: #f2f2f2;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 8px 12px;
     position: absolute;
     top: 10px;
@@ -316,7 +317,7 @@ img {
 
 .about .text h1 {
     color: black;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 70px;
     margin-top: 150px;
     margin-bottom: 20px;
@@ -325,7 +326,7 @@ img {
 
 .about .text h5 {
     color: black;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     margin-bottom: 25px;
     text-transform: capitalize;
@@ -334,7 +335,7 @@ img {
 
 .about .text p {
     color: black;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 1px;
@@ -382,7 +383,7 @@ input[type=password] {
     border-radius: 20px;
 }
 
-.loginsignup button {
+.loginsignup button, .signupbutton {
     background-color: grey;
     color: white;
     padding: 14px 20px;
@@ -391,13 +392,11 @@ input[type=password] {
     cursor: pointer;
     width: 100%;
     border-radius: 20px;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-
-
 }
 
-.loginsignup button:hover {
+.loginsignup button:hover, .signupbutton:hover {
     opacity: 0.8;
 }
 
@@ -421,13 +420,13 @@ span.psw {
 }
 
 .loginsignup p {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     text-align: center;
 }
 
 .loginsignup h2 {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     text-align: center;
 }
@@ -443,7 +442,7 @@ span.psw {
     border-radius: 20px;
     text-decoration: none;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
@@ -483,7 +482,7 @@ span.psw {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
 }
 
@@ -530,7 +529,7 @@ span.psw {
     font-size: 12px;
     margin-top: 70px;
     height: 30px;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
 .footer-container a , .footer-container p {
@@ -540,4 +539,39 @@ span.psw {
 
 .footer-container a:hover {
     color: grey;
+}
+
+.settings {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.changepasswordcontainer p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.changepasswordcontainer button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.changepasswordcontainer input[type=text],
+.changepasswordcontainer input[type=password] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 1px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
 }
