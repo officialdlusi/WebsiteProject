@@ -9,7 +9,7 @@ include_once 'navbar/header.php';
     <form action="includes/login.inc.php" method="post">
         <div class="imgcontainer">
             <a href="index.php">
-                <img src="img/logo.png" alt="MindOnMaths Logo" class="loginsignuplogo">
+                <img src="img/momlogo.png" alt="MindOnMaths Logo" class="loginsignuplogo">
             </a>
         </div>
 
@@ -27,9 +27,8 @@ include_once 'navbar/header.php';
             <input type="password" name="pwd" placeholder="Password..." required>
 
             <button type="submit" name="submit">Login</button>
-            <a href="signup.php" class="signuplink">
-                <p>Don't have an account? Sign Up</p>
-            </a>
+
+            <input type="button" class="signupbutton" onclick="location.href='signup.php'" value="Don't have an account?">
         </div>
 
         <?php

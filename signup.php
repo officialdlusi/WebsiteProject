@@ -9,7 +9,7 @@ include_once 'navbar/header.php';
     <form action="includes/signup.inc.php" method="post">
         <div class="imgcontainer">
             <a href="index.php">
-                <img src="img/logo.png" alt="MindOnMaths Logo" class="loginsignuplogo">
+                <img src="img/momlogo.png" alt="MindOnMaths Logo" class="loginsignuplogo">
             </a>
         </div>
 
