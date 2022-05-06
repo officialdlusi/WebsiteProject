@@ -4,8 +4,6 @@ session_start();
 
 $user = $_SESSION["useruid"];
 
-if ($user)
-{
     if(isset($_POST['submit']))
     {
         //check fields
@@ -34,33 +32,17 @@ if ($user)
                 header("location: index.php?error=passwordchanged");
                 session_destroy();
             } else {
-                header("location: changepassword.php?error=newnomatch");
+                header("location: try.php?error=newnomatch");
                 echo "new passwords don't match";
             }
         } else {
-            header("location: changepassword.php?error=oldnomatch");
+            header("location: try.php?error=oldnomatch");
             echo "old passwords don't match";
         }
 
-
-
+    } else {
+        header("location: try.php");
+        exit();
     }
-}
-
-//     } else {
-//     echo "
-//         <form action='changepassword.php' method='POST'>
-//             Old Password: <input type='text' name='oldpassword'><p>
-//             New Password: <input type='password' name='newpassword'><br>
-//             Repeat New Password: <input type='password' name='repeatnewpassword'><br>
-//             <input type='submit' name='submit' value='Change Password'>
-//         </form>
-//     ";
-//     }
-// } else {
-//     die ("You must be logged in to change your password!!!");
-// }
-
-// echo "<p>".$_SESSION["useruid"]. "</p>";
 
 ?>
