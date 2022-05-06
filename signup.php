@@ -24,7 +24,7 @@ include_once 'navbar/header.php';
             <label for="email">
                 <p>Email</p>
             </label>
-            <input type="text" name="email" placeholder="Email..." reuqired>
+            <input type="text" name="email" placeholder="Email..." required>
 
             <label for="uid">
                 <p>Username</p>
