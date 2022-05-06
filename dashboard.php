@@ -1,6 +1,6 @@
 <?php
-include_once '../navbar/header.php';
-require_once '../navbar/auth_check.php';
+include_once 'navbar/header.php';
+require_once 'navbar/auth_check.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +12,24 @@ require_once '../navbar/auth_check.php';
 </head>
 
 <body>
+    <!-- <p><?php echo $_SESSION['useruid'] ?>'s Dashboard</p> -->
     <div class="dashboard">
+
         <div class="box">
+
             <a href="lessons.html" class="dashboardlink">
-                <h2>Lessons</h2>
+                <h2>Year 3</h2>
             </a>
         </div>
         <div class="box">
             <a href="quiz.html" class="dashboardlink">
-                <h2>Quiz</h2>
+                <h2>Year 4</h2>
             </a>
         </div>
 
         <div class="box">
             <a href="worksheet.html" class="dashboardlink">
-                <h2>Worksheets</h2>
+                <h2>Year 5</h2>
             </a>
         </div>
     </div>
@@ -34,5 +37,5 @@ require_once '../navbar/auth_check.php';
 
 </html>
 <?php
-include_once '../navbar/footer.php';
+include_once 'navbar/footer.php';
 ?>
