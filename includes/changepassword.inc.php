@@ -29,7 +29,7 @@ $user = $_SESSION["useruid"];
                 $hashednewpassword = password_hash($newpassword, PASSWORD_DEFAULT);
                 $querychange = "UPDATE users SET usersPwd = '$hashednewpassword' WHERE usersuid = '$user'";
                 $result = mysqli_query($conn, $querychange);
-                header("location: ../index.php?error=passwordchanged");
+                echo "<script>alert('Your password has been changed successfully. Please log in with your new password'); window.location.href='../index.php?success=pwdchanged'</script>";
                 session_destroy();
             } else {
                 header("location: ../settings.php?error=newnomatch");
@@ -44,5 +44,3 @@ $user = $_SESSION["useruid"];
         header("location: ../settings.php");
         exit();
     }
-
-?>
