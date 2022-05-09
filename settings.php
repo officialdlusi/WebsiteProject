@@ -42,7 +42,7 @@ require_once 'navbar/auth_check.php';
                         echo "<h2>Your new passwords do not match</h2>";
                     } else if ($_GET["error"] == "oldnomatch") {
                         echo "<h2>Your old password is not correct</h2>";
-                    }
+                    } 
                 }
                 ?>
             </form>
