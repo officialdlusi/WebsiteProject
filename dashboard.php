@@ -1,5 +1,6 @@
 <?php
 include_once 'navbar/header.php';
+session_start();
 require_once 'navbar/auth_check.php';
 ?>
 <!DOCTYPE html>
