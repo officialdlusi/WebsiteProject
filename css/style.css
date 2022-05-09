@@ -472,13 +472,19 @@ span.psw {
     justify-content: space-evenly;
 }
 
+.dashboard-username {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 70px;
+    text-align: center;
+}
+
 .dashboard .box {
     width: 400px;
     height: 400px;
     background-color: grey;
     align-self: center;
     border-radius: 25px;
-    margin-top: 70px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,6 +510,9 @@ span.psw {
         height: 300px;
         font-size: 30px;
     }
+    .dashboard-username {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -512,6 +521,9 @@ span.psw {
         height: 200px;
         font-size: 20px;
     }
+    .dashboard-username {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 610px) {
@@ -519,6 +531,9 @@ span.psw {
         width: 150px;
         height: 150px;
         font-size: 15px;
+    }
+    .dashboard-username {
+        font-size: 17px;
     }
 }
 
@@ -652,4 +667,63 @@ span.psw {
 
 .quiz-container li {
     list-style: none;
+}
+
+.contactcontainer {
+    margin-top: 70px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactcontainer input[type = text], 
+.contactcontainer textarea[name = message] {
+    padding: 12px 20px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+.contactcontainer textarea[name = message] {
+    width: 35%;
+    height: 120px;
+}
+
+.contactcontainer button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.yeartopics {
+    margin-top: 70px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.yeartopics .topicbutton{
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.yeartopics .topicbutton:hover{
+    opacity: 0.8;
 }
