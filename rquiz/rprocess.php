@@ -22,7 +22,7 @@
         $total = mysqli_num_rows($result);
 
         //get correct answer
-        $query = "SELECT *  FROM `choices` WHERE questions_number AND topic = 'r' AND is_correct = 1";
+        $query = "SELECT *  FROM `choices` WHERE questions_number = $number AND topic = 'r' AND is_correct = 1";
 
         //get the answer result
         $result  = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
