@@ -1,5 +1,16 @@
 <?php
 include_once '../navbar/quizheader.php';
+require_once '../includes/dbh.inc.php';
+?>
+
+<?php
+//Get total of questions
+$query = "SELECT * FROM `quiz` WHERE topic = 'pv'";
+
+//Get the results
+$results = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
+
+$total = mysqli_num_rows($results);
 ?>
 
 <!DOCTYPE html>
@@ -19,11 +30,9 @@ include_once '../navbar/quizheader.php';
             Quiz Completed!
         </h2>
         <p>Congratulations! You have completed the quiz!</p>
-        <p>Final Score: <?php echo $_SESSION['score']; ?> out of <?php $total?></p>
+        <p>Final Score: <?php echo $_SESSION['score']; ?> / <?php echo $total ?></p>
         <button type="retake" ><a href="pv.php">Retake Quiz</a></button>
     </div>
 </body>
-
-<?php session_destroy();?>
 
 </html>

@@ -1,9 +1,10 @@
 <?php
     require_once '../includes/dbh.inc.php';
-    session_start();
+    include_once '../navbar/quizheader.php';
 ?>
 
 <?php
+
     //check for users score
     if(!isset($_SESSION['score'])) {
         $_SESSION['score'] = 0;
@@ -22,7 +23,7 @@
         $total = mysqli_num_rows($result);
 
         //get correct answer
-        $query = "SELECT *  FROM `choices` WHERE questions_number AND topic = 'pv' AND is_correct = 1";
+        $query = "SELECT *  FROM `choices` WHERE questions_number = $number AND topic = 'pv' AND is_correct = 1";
 
         //get the answer result
         $result  = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -34,9 +35,8 @@
         $correct_choice = $row['id'];
 
         if($correct_choice == $selected_choice){
-            $_SESSION['score'] ++;
+            $_SESSION['score']++;
         }
-
         //check if quiz is finished
         if($number == $total){
             header("location: pvfinal.php?=finished");
