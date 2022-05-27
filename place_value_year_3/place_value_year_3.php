@@ -5,13 +5,16 @@ include_once '../navbar/quizheader.php';
 
 <?php
 //Get total of questions
-$query = "SELECT * FROM `quiz` WHERE topic = 'pv'";
+$query = "SELECT * FROM `questions` WHERE topic = 'place_value_year_3'";
 
 //Get the results
 $results = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 
 $total = mysqli_num_rows($results);
+
+$_SESSION['score'] = 0;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +37,7 @@ $total = mysqli_num_rows($results);
                 <li><strong>Type: </strong>Multiple Choice</li>
                 <li><strong>Estimated time for Quiz: </strong><?php echo $total * 0.5 ?> minutes</li>
             </ul>
-            <a href="pvquiz.php?n=1">Start Quiz</a>
+            <button type="quizbtn"><a href="place_value_year_3_quiz.php?n=1">Start Quiz</a></button>
         </div>
     </header>
 </body>
@@ -42,5 +45,5 @@ $total = mysqli_num_rows($results);
 </html>
 
 <?php
-include_once '../navbar/footer.php'
+include_once '../navbar/quizfooter.php'
 ?>

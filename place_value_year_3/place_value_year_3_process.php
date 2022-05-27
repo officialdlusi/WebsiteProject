@@ -16,14 +16,14 @@
         $next = $number+1;
         
         //get total of questions
-        $query = "SELECT * FROM `quiz` WHERE topic = 'pv'";
+        $query = "SELECT * FROM `questions` WHERE topic = 'place_value_year_3'";
 
         //get total result
         $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
         $total = mysqli_num_rows($result);
 
         //get correct answer
-        $query = "SELECT *  FROM `choices` WHERE questions_number = $number AND topic = 'pv' AND is_correct = 1";
+        $query = "SELECT *  FROM `choices` WHERE questions_number = $number AND topic = 'place_value_year_3' AND is_correct = 1";
 
         //get the answer result
         $result  = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -39,9 +39,9 @@
         }
         //check if quiz is finished
         if($number == $total){
-            header("location: pvfinal.php?=finished");
+            header("location: place_value_year_3_final.php?=finished");
             exit();
         } else {
-            header("location: pvquiz.php?n=".$next);
+            header("location: place_value_year_3_quiz.php?n=".$next);
         }
     }
