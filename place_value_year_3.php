@@ -17,7 +17,7 @@ require_once 'navbar/auth_check.php';
     <div class="lessoncontainer">
         <h1>Place Value</h1>
         <video controls>
-            <source src="videos/placevalue.mp4" type="video/mp4" class="topicvideo">
+            <source src="videos/place_value_year_3.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>
             <strong>What does place value mean?</strong><br>

@@ -15,7 +15,7 @@ require_once 'navbar/auth_check.php';
 <div class="lessoncontainer">
         <h1>Comaparing Numbers</h1>
         <video controls>
-            <source src="videos/ComparingNumbers.mp4" type="video/mp4" class="topicvideo">
+            <source src="videos/comparing_numbers_year_3.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>
             <strong>What does comparing numbers mean?</strong><br>
