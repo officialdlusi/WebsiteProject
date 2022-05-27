@@ -1,6 +1,6 @@
 <?php
 include_once '../includes/dbh.inc.php';
-session_start();
+include_once '../navbar/quizheader.php';
 ?>
 
 <?php
@@ -9,14 +9,14 @@ session_start();
 $number = (int) $_GET['n'];
 
 //get total of questions
-$query = "SELECT * FROM `quiz` WHERE topic = 'cn'";
+$query = "SELECT * FROM `questions` WHERE topic = 'comparing_numbers_year_3'";
 
 //get total result
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 $total = mysqli_num_rows($result);
 
 //get question from database
-$query = "SELECT * FROM `quiz` WHERE questions_number = $number AND topic = 'cn'";
+$query = "SELECT * FROM `questions` WHERE questions_number = $number AND topic = 'comparing_numbers_year_3'";
 
 //get results from db
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -24,7 +24,7 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 $question = mysqli_fetch_assoc($result);
 
 //get choices from databse
-$query = "SELECT * FROM `choices` WHERE questions_number = $number AND topic = 'cn'";
+$query = "SELECT * FROM `choices` WHERE questions_number = $number AND topic = 'comparing_numbers_year_3'";
 
 //get results from db
 $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -42,13 +42,13 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 
 <body>
     <div class="quiz-container">
-        <div class="current-question">Question <?php echo $question['questions_number']; ?> of <?php echo $total?></div>
+        <div class="current-question">Question <?php echo $question['questions_number']; ?> of <?php echo $total ?></div>
         <p class="question">
             <?php
             echo $question['text'];
             ?>
         </p>
-        <form method="post" action="cnprocess.php">
+        <form method="post" action="comparing_numbers_year_3_process.php">
             <ul class="choices">
                 <?php
                 while ($row = mysqli_fetch_assoc($choices)) :
@@ -56,9 +56,14 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
                     <li><input name="choice" type="radio" value="<?php echo $row['id']; ?>"><?php echo $row['text']; ?></li>
                 <?php endwhile; ?>
             </ul>
-            <input type="submit" value="submit"/>
-            <input type="hidden" name="number" value="<?php echo $number; ?>"/>
+            <input type="submit" value="submit" />
+            <input type="hidden" name="number" value="<?php echo $number; ?>" />
         </form>
     </div>
 </body>
+
 </html>
+
+<?php
+include_once '../navbar/footer.php'
+?>
