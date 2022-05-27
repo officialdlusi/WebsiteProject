@@ -33,7 +33,7 @@ include_once 'navbar/header.php';
                     Sign Up
                 </h2>
                 <p>
-                    Head to the sign up page to all of our content on several Math's subjects.
+                    Head to the <a href="signup.php">sign up</a> page to all of our content on several Math's subjects.
                 </p>
             </div>
         </div>

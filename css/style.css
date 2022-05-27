@@ -273,13 +273,13 @@ img {
     }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 570px) {
     .slideshow-container .mySlides .info h2 {
         font-size: 10px;
     }
 
     .slideshow-container .mySlides .info p {
-        font-size: 5px;
+        font-size: 10px;
         width: 45%;
     }
 }
@@ -602,6 +602,10 @@ span.psw {
     border-radius: 25px;
 }
 
+.lessoncontainer img {
+    width: 40%;
+}
+
 .lessoncontainer p{
     width: 800px;
     margin-left: auto;
@@ -659,8 +663,9 @@ span.psw {
     width: 60%;
     margin: 0 auto;
     overflow: auto;
-    margin-top: 70px;
-    background-color: grey;
+    margin-top: 100px;
+    border-color: grey;
+    border-style: solid;
     border-radius: 20px;
     padding: 10px;
 }
@@ -689,7 +694,7 @@ span.psw {
 
 .contactcontainer textarea[name = message] {
     width: 35%;
-    height: 120px;
+    height: 90px;
 }
 
 .contactcontainer button {

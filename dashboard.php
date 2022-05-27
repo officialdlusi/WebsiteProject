@@ -18,18 +18,18 @@ require_once 'navbar/auth_check.php';
 
         <div class="box">
 
-            <a href="year3.php" class="dashboardlink">
+            <a href="year_3.php" class="dashboardlink">
                 <h2>Year 3</h2>
             </a>
         </div>
         <div class="box">
-            <a href="year4.php" class="dashboardlink">
+            <a href="year_4.php" class="dashboardlink">
                 <h2>Year 4</h2>
             </a>
         </div>
 
         <div class="box">
-            <a href="year5.php" class="dashboardlink">
+            <a href="year_5.php" class="dashboardlink">
                 <h2>Year 5</h2>
             </a>
         </div>

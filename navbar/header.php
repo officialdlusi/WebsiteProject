@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
