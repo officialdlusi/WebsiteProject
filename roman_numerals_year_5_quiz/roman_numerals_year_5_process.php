@@ -1,6 +1,6 @@
 <?php
-    require_once '../includes/dbh.inc.php';
-    session_start();
+    include_once '../includes/dbh.inc.php';
+    include_once '../navbar/quizheader.php';
 ?>
 
 <?php
@@ -15,7 +15,7 @@
         $next = $number+1;
         
         //get total of questions
-        $query = "SELECT * FROM `quiz` WHERE topic = 'roman_numerals_year_5'";
+        $query = "SELECT * FROM `questions` WHERE topic = 'roman_numerals_year_5'";
 
         //get total result
         $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -39,9 +39,9 @@
 
         //check if quiz is finished
         if($number == $total){
-            header("location: rnfinal.php?=finished");
+            header("location: roman_numerals_year_5_final.php?=finished");
             exit();
         } else {
-            header("location: rnquiz.php?n=".$next);
+            header("location: roman_numerals_year_5_quiz.php?n=".$next);
         }
     }

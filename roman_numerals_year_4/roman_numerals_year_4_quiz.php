@@ -29,6 +29,8 @@ $query = "SELECT * FROM `choices` WHERE questions_number = $number AND topic = '
 //get results from db
 $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 
+$_SESSION['score'] = 0;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

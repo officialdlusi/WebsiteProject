@@ -34,7 +34,7 @@
                 <li><strong>Type: </strong>Multiple Choice</li>
                 <li><strong>Estimated time for Quiz: </strong><?php echo $total * 0.5?> minutes</li>
             </ul>
-            <a href="roman_numerals_year_4_quiz.php?n=1">Start Quiz</a>
+            <button type="quizbtn"><a href="roman_numerals_year_4_quiz.php?n=1">Start Quiz</a></button>
         </div>
     </header>
 </body>

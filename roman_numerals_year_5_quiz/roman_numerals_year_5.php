@@ -1,17 +1,18 @@
 <?php
     include_once '../includes/dbh.inc.php';
-    // include_once '../navbar/header.php';
-    session_start();
+    include_once '../navbar/quizheader.php';
 ?>
 
 <?php
     //Get total of questions
-    $query = "SELECT * FROM `quiz` WHERE topic = 'roman_numerals_year_5'";
+    $query = "SELECT * FROM `questions` WHERE topic = 'roman_numerals_year_5'";
 
     //Get the results
     $results = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 
     $total = mysqli_num_rows($results);
+
+    $_SESSION['score'] = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,8 +21,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Roman Numerals - Year 5</title>
 </head>
 
@@ -31,15 +30,13 @@
             <h1>
             Roman Numerals Quiz
             </h1>
-        </div>
-        <div class="quiz-container">
             <p>Please select the correct answer</p>
             <ul>
                 <li><strong>Number of Questions: </strong><?php echo $total?></li>
                 <li><strong>Type: </strong>Multiple Choice</li>
                 <li><strong>Estimated time for Quiz: </strong><?php echo $total * 0.5?> minutes</li>
             </ul>
-            <a href="rnquiz.php?n=1">Start Quiz</a>
+            <button type="quizbtn"><a href="roman_numerals_year_5_quiz.php?n=1">Start Quiz</a></button>
         </div>
     </header>
 </body>
@@ -47,5 +44,5 @@
 </html>
 
 <?php
-include_once '../navbar/footer.php'
+include_once '../navbar/quizfooter.php'
 ?>

@@ -1,5 +1,16 @@
 <?php
-session_start();
+    include_once '../includes/dbh.inc.php';
+    include '../navbar/quizheader.php';
+?>
+
+<?php
+    //Get total of questions
+    $query = "SELECT * FROM `questions` WHERE topic = 'roman_numerals_year_5'";
+
+    //Get the results
+    $results = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
+
+    $total = mysqli_num_rows($results);
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +20,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finished</title>
 </head>
 
 <body>
@@ -18,10 +29,14 @@ session_start();
             Quiz Completed!
         </h2>
         <p>Congratulations! You have completed the quiz!</p>
-        <p>Final Score: <?php echo $_SESSION['score']; ?></p>
-        <button type="retake"><a href="rn.php">Retake Quiz</a></button>
+        <p>Final Score: <?php echo ($_SESSION['score'] / $total) * 100?>%</p>
+        <button type="retake"><a href="roman_numerals_year_5.php">Retake Quiz</a></button>
     </div>
 </body>
 
 
 </html>
+
+<?php
+include_once '../navbar/quizfooter.php'
+?>
