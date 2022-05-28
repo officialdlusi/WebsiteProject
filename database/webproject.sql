@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 28, 2022 at 02:44 AM
+-- Generation Time: May 28, 2022 at 11:33 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -240,7 +240,17 @@ INSERT INTO `questions` (`id`, `questions_number`, `text`, `topic`) VALUES
 (37, 7, 'What is the number 400 as a roman numeral?', 'roman_numerals_year_5'),
 (38, 8, 'What is the roman numeral C as a number?', 'roman_numerals_year_5'),
 (39, 9, 'Is the roman numeral XM valid?', 'roman_numerals_year_5'),
-(40, 10, 'What is the number 1200 as a roman numeral?', 'roman_numerals_year_5');
+(40, 10, 'What is the number 1200 as a roman numeral?', 'roman_numerals_year_5'),
+(41, 1, 'What is 1000 more than 438?', 'more_than_less_than_year_4'),
+(42, 2, 'What is 1000 less than 2000?', 'more_than_less_than_year_4'),
+(43, 3, 'What is 1000 more than 1432?', 'more_than_less_than_year_4'),
+(44, 4, 'What is 1000 less than 7432?', 'more_than_less_than_year_4'),
+(45, 5, 'What is 1000 more than 11329?', 'more_than_less_than_year_4'),
+(46, 6, 'What is 1000 less than 5438?', 'more_than_less_than_year_4'),
+(47, 7, 'What is 1000 more than 928?', 'more_than_less_than_year_4'),
+(48, 8, 'What is 1000 less than 4329?', 'more_than_less_than_year_4'),
+(49, 9, 'What is 1000 more than 764?', 'more_than_less_than_year_4'),
+(50, 10, 'What is 1000 less than 394?', 'more_than_less_than_year_4');
 
 -- --------------------------------------------------------
 
@@ -299,7 +309,7 @@ ALTER TABLE `choices`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `users`

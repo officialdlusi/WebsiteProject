@@ -33,7 +33,7 @@ require_once 'navbar/auth_check.php';
         <p>
             When trying to work out how to find <strong>1000 less</strong> than of a value we <strong>subtract</strong> 1000 from the given value. We can see on the place value chart that when we subtract 1000 we subtract the <strong>1</strong> in the thousands from the <strong>4</strong> in thousands and get the value <strong>3219</strong>.
         </p>
-        <input type="button" class="quizbutton" onClick="location.href='more_than_less_than_year_4/more_than_less_than_year_4_quiz.php'"value="Quiz">
+        <input type="button" class="quizbutton" onClick="location.href='more_than_less_than_year_4/more_than_less_than_year_4.php'"value="Quiz">
         <input type="button" class="quizbutton" onClick="location.href='#'" value="More Than, Less Than Worksheet">
     </div>
 </body>

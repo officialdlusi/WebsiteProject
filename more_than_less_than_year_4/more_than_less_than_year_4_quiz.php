@@ -37,7 +37,7 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparing Numbers Q: <?php echo $question['questions_number']; ?></title>
+    <title>More Than, Less Than Q: <?php echo $question['questions_number']; ?></title>
 </head>
 
 <body>
