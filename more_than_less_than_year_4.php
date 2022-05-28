@@ -21,7 +21,17 @@ require_once 'navbar/auth_check.php';
             1000 more than, less than means to <strong>add</strong>, in the case of <strong>1000 more</strong> and to <strong>subtract</strong>, in the case of <strong>1000 less</strong>.
         </p>
         <p>
-
+            <strong>How do we work out 1000 more or 1000 less than a given value?</strong><br>
+            We are able to work 1000 more or 1000 less than a given value by using a place value chart. If you have not learnt about place value yet or need a refresh use this <a href="place_value_year_3.php">link</a> here.
+        </p>
+        <img src="img/place_value_thousands_blank.png" alt="Place value chart">
+        <p>
+            <strong>Example</strong><br>
+            What is 1000 less than of <strong>4219</strong>?
+        </p>
+        <img src="img/more_than_less_than_example.png" alt="Less than example">
+        <p>
+            When trying to work out how to find <strong>1000 less</strong> than of a value we <strong>subtract</strong> 1000 from the given value. Once we place the value and the amount less we want to find we
         </p>
         <input type="button" class="quizbutton" onClick="location.href='more_than_less_than_year_4/more_than_less_than_year_4.php'"value="Quiz">
         <input type="button" class="quizbutton" onClick="location.href='#'" value="Roman Numerals Worksheet">
