@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 27, 2022 at 11:25 AM
+-- Generation Time: May 28, 2022 at 02:44 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -145,7 +145,43 @@ INSERT INTO `choices` (`id`, `questions_number`, `is_correct`, `text`, `topic`) 
 (117, 10, 0, 'IIX', 'roman_numerals_year_4'),
 (118, 10, 0, 'IXX', 'roman_numerals_year_4'),
 (119, 10, 0, 'VIVI', 'roman_numerals_year_4'),
-(120, 10, 1, 'XII', 'roman_numerals_year_4');
+(120, 10, 1, 'XII', 'roman_numerals_year_4'),
+(121, 1, 1, '1011', 'roman_numerals_year_5'),
+(122, 1, 0, '111', 'roman_numerals_year_5'),
+(123, 1, 0, '61', 'roman_numerals_year_5'),
+(124, 1, 0, '1110', 'roman_numerals_year_5'),
+(125, 2, 0, 'MMXIXI', 'roman_numerals_year_5'),
+(126, 2, 1, 'MMXXII', 'roman_numerals_year_5'),
+(127, 2, 0, 'MMXIXI', 'roman_numerals_year_5'),
+(128, 2, 0, 'MMXXIIV', 'roman_numerals_year_5'),
+(129, 3, 0, '1990', 'roman_numerals_year_5'),
+(130, 3, 0, '1998', 'roman_numerals_year_5'),
+(131, 3, 1, '1999', 'roman_numerals_year_5'),
+(132, 3, 0, '990', 'roman_numerals_year_5'),
+(133, 4, 0, 'MDCLCXXVII', 'roman_numerals_year_5'),
+(134, 4, 0, 'MDCCLXXIIV', 'roman_numerals_year_5'),
+(135, 4, 0, 'MCDCLXXVII', 'roman_numerals_year_5'),
+(136, 4, 1, 'MDCCLXXVII', 'roman_numerals_year_5'),
+(137, 5, 1, '501', 'roman_numerals_year_5'),
+(138, 5, 0, '51', 'roman_numerals_year_5'),
+(139, 5, 0, '510', 'roman_numerals_year_5'),
+(140, 5, 0, '55', 'roman_numerals_year_5'),
+(141, 6, 0, 'Yes. The roman numeral for 499 is ID', 'roman_numerals_year_5'),
+(142, 6, 1, 'No. The valid roman numeral for 499 is CDXCIX', 'roman_numerals_year_5'),
+(143, 7, 1, 'CD', 'roman_numerals_year_5'),
+(144, 7, 0, 'CCCC', 'roman_numerals_year_5'),
+(145, 7, 0, 'XXXX', 'roman_numerals_year_5'),
+(146, 7, 0, 'VVVV', 'roman_numerals_year_5'),
+(147, 8, 0, '10', 'roman_numerals_year_5'),
+(148, 8, 0, '50', 'roman_numerals_year_5'),
+(149, 8, 0, '5', 'roman_numerals_year_5'),
+(150, 8, 1, '100', 'roman_numerals_year_5'),
+(151, 9, 1, 'No. The valid roman numeral for 990 is CMXC', 'roman_numerals_year_5'),
+(152, 9, 0, 'Yes. The valid roman numeral for 990 is XM', 'roman_numerals_year_5'),
+(153, 10, 0, 'CCM', 'roman_numerals_year_5'),
+(154, 10, 0, 'CMC', 'roman_numerals_year_5'),
+(155, 10, 0, 'CCCCCCCCCCCC', 'roman_numerals_year_5'),
+(156, 10, 1, 'MCC', 'roman_numerals_year_5');
 
 -- --------------------------------------------------------
 
@@ -194,7 +230,17 @@ INSERT INTO `questions` (`id`, `questions_number`, `text`, `topic`) VALUES
 (27, 7, 'What is the number 40 as a roman numeral?', 'roman_numerals_year_4'),
 (28, 8, 'What is the roman numeral C as a number?', 'roman_numerals_year_4'),
 (29, 9, 'Is the roman numeral VVV valid?', 'roman_numerals_year_4'),
-(30, 10, 'What is the number 12 as a roman numeral?', 'roman_numerals_year_4');
+(30, 10, 'What is the number 12 as a roman numeral?', 'roman_numerals_year_4'),
+(31, 1, 'What is the roman numeral MXI as a number?', 'roman_numerals_year_5'),
+(32, 2, 'What is the number 2022 as a roman numeral?', 'roman_numerals_year_5'),
+(33, 3, 'What is the roman numeral MCMXCIX as a number?', 'roman_numerals_year_5'),
+(34, 4, 'What is the number 1777 as a roman numeral?', 'roman_numerals_year_5'),
+(35, 5, 'What is the roman numeral DI as a number?', 'roman_numerals_year_5'),
+(36, 6, 'Is the roman numeral ID valid?', 'roman_numerals_year_5'),
+(37, 7, 'What is the number 400 as a roman numeral?', 'roman_numerals_year_5'),
+(38, 8, 'What is the roman numeral C as a number?', 'roman_numerals_year_5'),
+(39, 9, 'Is the roman numeral XM valid?', 'roman_numerals_year_5'),
+(40, 10, 'What is the number 1200 as a roman numeral?', 'roman_numerals_year_5');
 
 -- --------------------------------------------------------
 
@@ -247,13 +293,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `choices`
 --
 ALTER TABLE `choices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `users`
