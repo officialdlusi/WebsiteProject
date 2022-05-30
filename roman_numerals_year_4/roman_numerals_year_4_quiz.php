@@ -64,3 +64,7 @@ $_SESSION['score'] = 0;
     </div>
 </body>
 </html>
+
+<?php
+include_once '../navbar/quizfooter.php'
+?>

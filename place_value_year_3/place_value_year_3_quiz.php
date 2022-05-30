@@ -62,3 +62,7 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
     </div>
 </body>
 </html>
+
+<?php
+include_once '../navbar/quizfooter.php'
+?>

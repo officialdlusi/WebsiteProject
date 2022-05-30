@@ -42,5 +42,5 @@
 </html>
 
 <?php
-include_once '../navbar/footer.php'
+include_once '../navbar/quizfooter.php'
 ?>

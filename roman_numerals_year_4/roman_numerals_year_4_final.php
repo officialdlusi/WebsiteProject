@@ -36,3 +36,7 @@
 
 
 </html>
+
+<?php
+include_once '../navbar/quizfooter.php'
+?>
