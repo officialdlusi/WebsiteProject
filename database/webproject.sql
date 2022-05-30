@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 30, 2022 at 11:52 AM
+-- Generation Time: May 30, 2022 at 05:37 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -221,7 +221,47 @@ INSERT INTO `choices` (`id`, `questions_number`, `is_correct`, `text`, `topic`) 
 (193, 10, 0, '2394', 'more_than_less_than_year_4'),
 (194, 10, 1, '394', 'more_than_less_than_year_4'),
 (195, 10, 0, '1494', 'more_than_less_than_year_4'),
-(196, 10, 0, '1304', 'more_than_less_than_year_4');
+(196, 10, 0, '1304', 'more_than_less_than_year_4'),
+(197, 1, 1, '540', 'rounding_year_4'),
+(198, 1, 0, '550', 'rounding_year_4'),
+(199, 1, 0, '555', 'rounding_year_4'),
+(200, 1, 0, '545', 'rounding_year_4'),
+(201, 2, 0, '10000', 'rounding_year_4'),
+(202, 2, 1, '9000', 'rounding_year_4'),
+(203, 2, 0, '9500', 'rounding_year_4'),
+(204, 2, 0, '9400', 'rounding_year_4'),
+(205, 3, 0, '500', 'rounding_year_4'),
+(206, 3, 0, '450', 'rounding_year_4'),
+(207, 3, 1, '400', 'rounding_year_4'),
+(208, 3, 0, '430', 'rounding_year_4'),
+(209, 4, 0, '0', 'rounding_year_4'),
+(210, 4, 0, '300', 'rounding_year_4'),
+(211, 4, 0, '390', 'rounding_year_4'),
+(212, 4, 1, '400', 'rounding_year_4'),
+(213, 5, 1, '1000', 'rounding_year_4'),
+(214, 5, 0, '1010', 'rounding_year_4'),
+(215, 5, 0, '1100', 'rounding_year_4'),
+(216, 5, 0, '0', 'rounding_year_4'),
+(217, 6, 0, '750', 'rounding_year_4'),
+(218, 6, 1, '700', 'rounding_year_4'),
+(219, 6, 0, '800', 'rounding_year_4'),
+(220, 6, 0, '1000', 'rounding_year_4'),
+(221, 7, 1, '300', 'rounding_year_4'),
+(222, 7, 0, '295', 'rounding_year_4'),
+(223, 7, 0, '290', 'rounding_year_4'),
+(224, 7, 0, '280', 'rounding_year_4'),
+(225, 8, 0, '850', 'rounding_year_4'),
+(226, 8, 1, '1000', 'rounding_year_4'),
+(227, 8, 0, '800', 'rounding_year_4'),
+(228, 8, 0, '820', 'rounding_year_4'),
+(229, 9, 1, '600', 'rounding_year_4'),
+(230, 9, 0, '500', 'rounding_year_4'),
+(231, 9, 0, '550', 'rounding_year_4'),
+(232, 9, 0, '560', 'rounding_year_4'),
+(233, 10, 0, '0', 'rounding_year_4'),
+(234, 10, 1, '1000', 'rounding_year_4'),
+(235, 10, 0, '700', 'rounding_year_4'),
+(236, 10, 0, '750', 'rounding_year_4');
 
 -- --------------------------------------------------------
 
@@ -290,7 +330,17 @@ INSERT INTO `questions` (`id`, `questions_number`, `text`, `topic`) VALUES
 (47, 7, 'What is 1000 more than 928?', 'more_than_less_than_year_4'),
 (48, 8, 'What is 1000 less than 4329?', 'more_than_less_than_year_4'),
 (49, 9, 'What is 1000 more than 764?', 'more_than_less_than_year_4'),
-(50, 10, 'What is 1000 less than 1394?', 'more_than_less_than_year_4');
+(50, 10, 'What is 1000 less than 1394?', 'more_than_less_than_year_4'),
+(51, 1, 'What is 543 to the nearest 10?', 'rounding_year_4'),
+(52, 2, 'What is 9438 to the nearest 1000?', 'rounding_year_4'),
+(53, 3, 'What is 432 to the nearest 100?', 'rounding_year_4'),
+(54, 4, 'What is 395 to the nearest 10?', 'rounding_year_4'),
+(55, 5, 'What is 1002 to the nearest 1000?', 'rounding_year_4'),
+(56, 6, 'What is 743 to the nearest 100?', 'rounding_year_4'),
+(57, 7, 'What is 297 to the nearest 10?', 'rounding_year_4'),
+(58, 8, 'What is 811 to the nearest 1000?', 'rounding_year_4'),
+(59, 9, 'What is 555 to the nearest 100?', 'rounding_year_4'),
+(60, 10, 'What is 743 to the nearest 1000?', 'rounding_year_4');
 
 -- --------------------------------------------------------
 
@@ -305,13 +355,6 @@ CREATE TABLE `users` (
   `usersUid` varchar(128) NOT NULL,
   `usersPwd` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`usersId`, `usersName`, `usersEmail`, `usersUid`, `usersPwd`) VALUES
-(1, 'Liam Richardson', 'liam.richardson@gmail.com', 'lmrtrax', '$2y$10$NUknzzYj45u61/OYD9yPbuWz3VKLzTWAA59SKu7u.OQ.hWJzX3tbu');
 
 --
 -- Indexes for dumped tables
@@ -343,13 +386,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `choices`
 --
 ALTER TABLE `choices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `users`
