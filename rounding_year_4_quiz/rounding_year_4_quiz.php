@@ -1,6 +1,6 @@
 <?php
-include_once '../includes/dbh.inc.php';
-session_start();
+    include_once '../includes/dbh.inc.php';
+    include '../navbar/quizheader.php';
 ?>
 
 <?php
@@ -9,14 +9,14 @@ session_start();
 $number = (int) $_GET['n'];
 
 //get total of questions
-$query = "SELECT * FROM `quiz` WHERE topic = 'r'";
+$query = "SELECT * FROM `questions` WHERE topic = 'rounding_year_4'";
 
 //get total result
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 $total = mysqli_num_rows($result);
 
 //get question from database
-$query = "SELECT * FROM `quiz` WHERE questions_number = $number AND topic = 'r'";
+$query = "SELECT * FROM `questions` WHERE questions_number = $number AND topic = 'rounding_year_4'";
 
 //get results from db
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -24,7 +24,7 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
 $question = mysqli_fetch_assoc($result);
 
 //get choices from databse
-$query = "SELECT * FROM `choices` WHERE questions_number = $number AND topic = 'r'";
+$query = "SELECT * FROM `choices` WHERE questions_number = $number AND topic = 'rounding_year_4'";
 
 //get results from db
 $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
@@ -48,7 +48,7 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
             echo $question['text'];
             ?>
         </p>
-        <form method="post" action="rprocess.php">
+        <form method="post" action="rounding_year_4_process.php">
             <ul class="choices">
                 <?php
                 while ($row = mysqli_fetch_assoc($choices)) :
@@ -62,3 +62,7 @@ $choices = mysqli_query($conn, $query) or die(mysqli_error($conn) . __LINE__);
     </div>
 </body>
 </html>
+
+<?php
+include_once '../navbar/quizfooter.php'
+?>
