@@ -16,6 +16,7 @@ require_once 'navbar/auth_check.php';
         <h1>Year 4 - Topics</h1>
         <input type="button" class="topicbutton" onclick="location.href='roman_numerals_year_4.php'" value="Roman Numerals">
         <input type="button" class="topicbutton" onclick="location.href='more_than_less_than_year_4.php'" value="More Than Less Than">
+        <input type="button" class="topicbutton" onclick="location.href='rounding_year_4.php'" value="Rounding">
     </div>
 </body>
 </html>
