@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 28, 2022 at 11:33 PM
+-- Generation Time: May 30, 2022 at 11:52 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -181,7 +181,47 @@ INSERT INTO `choices` (`id`, `questions_number`, `is_correct`, `text`, `topic`) 
 (153, 10, 0, 'CCM', 'roman_numerals_year_5'),
 (154, 10, 0, 'CMC', 'roman_numerals_year_5'),
 (155, 10, 0, 'CCCCCCCCCCCC', 'roman_numerals_year_5'),
-(156, 10, 1, 'MCC', 'roman_numerals_year_5');
+(156, 10, 1, 'MCC', 'roman_numerals_year_5'),
+(157, 1, 1, '1438', 'more_than_less_than_year_4'),
+(158, 1, 0, '-438', 'more_than_less_than_year_4'),
+(159, 1, 0, '538', 'more_than_less_than_year_4'),
+(160, 1, 0, '338', 'more_than_less_than_year_4'),
+(161, 2, 0, '3000', 'more_than_less_than_year_4'),
+(162, 2, 1, '1000', 'more_than_less_than_year_4'),
+(163, 2, 0, '2100', 'more_than_less_than_year_4'),
+(164, 2, 0, '1900', 'more_than_less_than_year_4'),
+(165, 3, 0, '1532', 'more_than_less_than_year_4'),
+(166, 3, 0, '432', 'more_than_less_than_year_4'),
+(167, 3, 1, '2432', 'more_than_less_than_year_4'),
+(168, 3, 0, '1332', 'more_than_less_than_year_4'),
+(169, 4, 0, '7332', 'more_than_less_than_year_4'),
+(170, 4, 0, '7532', 'more_than_less_than_year_4'),
+(171, 4, 0, '8432', 'more_than_less_than_year_4'),
+(172, 4, 1, '6432', 'more_than_less_than_year_4'),
+(173, 5, 1, '12329', 'more_than_less_than_year_4'),
+(174, 5, 0, '10329', 'more_than_less_than_year_4'),
+(175, 5, 0, '11429', 'more_than_less_than_year_4'),
+(176, 5, 0, '11229', 'more_than_less_than_year_4'),
+(177, 6, 0, '6438', 'more_than_less_than_year_4'),
+(178, 6, 1, '4438', 'more_than_less_than_year_4'),
+(179, 6, 0, '5538', 'more_than_less_than_year_4'),
+(180, 6, 0, '5338', 'more_than_less_than_year_4'),
+(181, 7, 1, 'XXXX', 'more_than_less_than_year_4'),
+(182, 7, 0, 'VVVV', 'more_than_less_than_year_4'),
+(183, 7, 0, '10', 'more_than_less_than_year_4'),
+(184, 7, 0, '50', 'more_than_less_than_year_4'),
+(185, 8, 0, '1329', 'more_than_less_than_year_4'),
+(186, 8, 1, '3329', 'more_than_less_than_year_4'),
+(187, 8, 0, '2239', 'more_than_less_than_year_4'),
+(188, 8, 0, '2429', 'more_than_less_than_year_4'),
+(189, 9, 1, '1764', 'more_than_less_than_year_4'),
+(190, 9, 0, '-764', 'more_than_less_than_year_4'),
+(191, 9, 0, '754', 'more_than_less_than_year_4'),
+(192, 9, 0, '774', 'more_than_less_than_year_4'),
+(193, 10, 0, '2394', 'more_than_less_than_year_4'),
+(194, 10, 1, '394', 'more_than_less_than_year_4'),
+(195, 10, 0, '1494', 'more_than_less_than_year_4'),
+(196, 10, 0, '1304', 'more_than_less_than_year_4');
 
 -- --------------------------------------------------------
 
@@ -250,7 +290,7 @@ INSERT INTO `questions` (`id`, `questions_number`, `text`, `topic`) VALUES
 (47, 7, 'What is 1000 more than 928?', 'more_than_less_than_year_4'),
 (48, 8, 'What is 1000 less than 4329?', 'more_than_less_than_year_4'),
 (49, 9, 'What is 1000 more than 764?', 'more_than_less_than_year_4'),
-(50, 10, 'What is 1000 less than 394?', 'more_than_less_than_year_4');
+(50, 10, 'What is 1000 less than 1394?', 'more_than_less_than_year_4');
 
 -- --------------------------------------------------------
 
@@ -303,7 +343,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `choices`
 --
 ALTER TABLE `choices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
 
 --
 -- AUTO_INCREMENT for table `questions`
