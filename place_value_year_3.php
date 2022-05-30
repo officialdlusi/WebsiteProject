@@ -44,7 +44,7 @@ require_once 'navbar/auth_check.php';
             An example of using place value in treal life can be seen in working out weight when we mgiht want to find out how heavy an item is (e.g. a tennis ball).
         </p>
         <input type="button" class="quizbutton" onClick="location.href='place_value_year_3/place_value_year_3.php'" value="Quiz">
-        <input type="button" class="quizbutton" onClick="location.href='#'" value="Place Value Worksheet">
+        <a href="worksheets/place_value_year_3(questions&answers).pdf" target="_blank"><button class="quizbutton">Worksheets</button></a>
     </div>
 </body>
 

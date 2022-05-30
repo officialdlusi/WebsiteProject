@@ -56,7 +56,7 @@ require_once 'navbar/auth_check.php';
             Therefore we know the value of the roman numeral <strong>MDLXVI</strong> is <strong>1000 + 500 + 50 + 10 + 5 + 1</strong> equalling <strong>1566</strong>.
         </p>
         <input type="button" class="quizbutton" onClick="location.href='roman_numerals_year_5_quiz/roman_numerals_year_5.php'" value="Quiz">
-        <input type="button" class="quizbutton" onClick="location.href='#'" value="Roman Numerals Worksheet">
+        <a href="worksheets/roman_numerals_year_5(questions&answers).pdf" target="_blank"><button class="quizbutton">Worksheets</button></a>
     </div>
 </body>
 

@@ -41,7 +41,7 @@ require_once 'navbar/auth_check.php';
             An example of comparing numbers in real life can be seen when shopping in supermarkets where we compare food prices, in order to get the cheapest food for the best value.
         </p>   
         <input type="button" class="quizbutton" onClick="location.href='comparing_numbers_year_3_quiz/comparing_numbers_year_3.php'" value="Quiz">
-        <input type="button" class="quizbutton" onClick="location.href='#'" value="Comaparing Numbers Worksheet">
+        <a href="worksheets/comparing_numbers_year_3(questions&answers).pdf" target="_blank"><button class="quizbutton">Worksheets</button></a>
     </div>
 </body>
 </html>

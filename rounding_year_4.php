@@ -36,7 +36,7 @@ require_once 'navbar/auth_check.php';
             Therefore we know that the answer will be <strong>520</strong>.
         </p>
         <input type="button" class="quizbutton" onClick="location.href='rounding_year_4_quiz/rounding_year_4.php'" value="Quiz">
-        <input type="button" class="quizbutton" onClick="location.href='#'" value="Rounding Worksheet">
+        <a href="worksheets/rounding_year_4(question&answers).pdf" target="_blank"><button class="quizbutton">Worksheets</button></a>
     </div>
 </body>
 </html>

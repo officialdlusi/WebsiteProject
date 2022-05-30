@@ -54,7 +54,7 @@ require_once 'navbar/auth_check.php';
             Therefore we know the value of the roman numeral <strong>XXI</strong> is <strong>10 + 11</strong> equalling <strong>21</strong>.
         </p>
         <input type="button" class="quizbutton" onClick="location.href='roman_numerals_year_4/roman_numerals_year_4.php'"value="Quiz">
-        <input type="button" class="quizbutton" onClick="location.href='#'" value="Roman Numerals Worksheet">
+        <a href="worksheets/roman_numerals_year_4(questions&answers).pdf" target="_blank"><button class="quizbutton">Worksheets</button></a>
     </div>
 </body>
 </html>
