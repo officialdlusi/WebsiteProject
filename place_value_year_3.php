@@ -16,7 +16,7 @@ require_once 'navbar/auth_check.php';
 <body>
     <div class="lessoncontainer">
         <h1>Place Value</h1>
-        <video controls>
+        <video poster="thumbnails/place_value_year_3_thumbnail.png" controls>
             <source src="videos/place_value_year_3.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>

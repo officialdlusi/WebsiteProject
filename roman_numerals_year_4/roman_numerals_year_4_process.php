@@ -1,5 +1,5 @@
 <?php
-    require_once '../includes/dbh.inc.php';
+    require '../includes/dbh.inc.php';
     include_once '../navbar/quizheader.php';
 ?>
 

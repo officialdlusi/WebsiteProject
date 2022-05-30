@@ -13,7 +13,7 @@ require_once 'navbar/auth_check.php';
 <body>
 <div class="lessoncontainer">
         <h1>1000 More Than, Less Than</h1>
-        <video controls>
+        <video poster="thumbnails/more_than_less_than_year_4_thumbnail.png" controls>
             <source src="videos/more_than_less_than_year_4.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>

@@ -15,7 +15,7 @@ require_once 'navbar/auth_check.php';
 <body>
     <div class="lessoncontainer">
         <h1>Roman Numerals</h1>
-        <video controls>
+        <video poster="thumbnails/roman_numerals_year_5_thumbnail.png" controls>
             <source src="videos/roman_numerals_year_5.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>

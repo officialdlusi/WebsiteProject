@@ -13,8 +13,8 @@ require_once 'navbar/auth_check.php';
 <body>
 <div class="lessoncontainer">
         <h1>Roman Numerals</h1>
-        <video controls>
-            <source src="videos/RomanNumerals.mp4" type="video/mp4" class="topicvideo">
+        <video poster="thumbnails/roman_numerals_year_4_thumbnail.png" controls>
+            <source src="videos//roman_numerals_year_4.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>
             <strong>What are roman numerals?</strong><br>

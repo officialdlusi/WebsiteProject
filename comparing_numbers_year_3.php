@@ -14,7 +14,7 @@ require_once 'navbar/auth_check.php';
 <body>
 <div class="lessoncontainer">
         <h1>Comaparing Numbers</h1>
-        <video controls>
+        <video poster="thumbnails/comparing_numbers_year_3_thumbnail.png" controls>
             <source src="videos/comparing_numbers_year_3.mp4" type="video/mp4" class="topicvideo">
         </video>
         <p>
