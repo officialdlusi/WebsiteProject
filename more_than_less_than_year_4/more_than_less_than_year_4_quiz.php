@@ -1,6 +1,7 @@
 <?php
-include_once '../includes/dbh.inc.php';
-include_once '../navbar/quizheader.php';
+    include_once '../includes/dbh.inc.php';
+    include '../navbar/quizheader.php';
+    include '../navbar/quiz_auth_check.php';
 ?>
 
 <?php
